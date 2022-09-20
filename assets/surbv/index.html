@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SURBV</title>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=600">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+</head>
+<body onload="myFunction()">
+
+    <div id="banner">
+        <img src="./assets/f5_bg.png" alt="f5_bg" class="f5_bg">
+       
+        <img src="./assets/cta.png" alt="cta" class="cta">
+        <img src="./assets/f3_bg_bottom.png" alt="f3_bg_bottom" class="f3_bg_bottom">
+        <img src="./assets/f3_bg_top.png" alt="f3_bg_top" class="f3_bg_top">
+        <img src="./assets/f3_t.png" alt="f3_t" class="f3_t">
+
+        <img src="./assets/f4_bg_top.png" alt="f4_bg_top" class="f4_bg_top">
+        
+        <img src="./assets/f4_bg_bottom.png" alt="f4_bg_bottom" class="f4_bg_bottom">
+        <img src="./assets/f4_t.png" alt="f4_t" class="f4_t">
+        <img src="./assets/f4_shape_left.png" alt="f4_shape_left" class="f4_shape_left">
+        <div class="f4_shape_right"></div>
+        <img src="./assets/logo.png" alt="logo" class="logo">
+
+    </div>
+
+    <script>
+        
+        
+        function myFunction() {
+
+        var t1 = gsap.timeline();        
+            t1
+            .to('img', { duration: 0, display: 'block' }) 
+
+            .add('f1', '+=.6')
+            .to('#fila', { duration: 0.8, opacity: 1, y: 0, ease: 'power2.out' }, 'f1') 
+            .to('.f5_bg', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f1')
+            .to('.cta', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f1+=0.2')
+
+            .add('f3', '+=0.55')
+            .to('.f3_bg_top', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f3')
+            .to('.f3_bg_bottom', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f3')
+            .to('.f3_t', { duration: 0.8, y: 0, ease: 'power2.out' }, 'f3')
+
+            .add('f4', '+=1.4')
+            .to('.f4_bg_top', { duration: 0, opacity: 1, ease: 'power0.out' }, 'f4')
+            .to('.f4_shape_left', { duration: 0.1, opacity: 1, ease: 'power0.out' })
+            .to('.f4_shape_right', { duration: 0.1, opacity: 1, ease: 'power0.out' }, '-=.1')
+            .to('.f4_shape_right', { duration: 1, width: 218.5, ease: 'power0.out' }, '-=.1')
+            .to('.f4_t', { duration: 0.8, x: 0, ease: 'power0.in' }, '-=1')
+            .to('.f4_bg_bottom', { duration: 0.8, y: 0, ease: 'power1.out' }, '-=.7')           
+
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        var clickTag = "https://www.perrysport.nl/";
+        var banner = document.getElementById("banner");
+        banner.style.cursor = "pointer";
+        banner.addEventListener("click", goURL);
+
+        function goURL() {
+            window.open(clickTag);
+        }
+
+    </script>
+
+</body>
+</html>

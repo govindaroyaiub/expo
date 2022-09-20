@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hema</title>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=600">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+    
+</head>
+<body onload="myFunction()">
+
+    <div id="banner">
+            <img src="assets/bg.png" class="bg">
+            <img src="assets/blue_shape.png" class="blue_shape">
+            <img src="assets/f1_t1.png" class="f1_t1 f1_t">
+            <img src="assets/f1_t2.png" class="f1_t2 f1_t">
+            <img src="assets/f1_t3.png" class="f1_t3 f1_t">
+            <img src="assets/vanaf.png" class="vanaf f2_t">
+            <img src="assets/big_price.png" class="big_price f2_t">
+            <img src="assets/small_price.png" class="small_price f2_t">
+            <img src="assets/per.png" class="per f2_t">
+            <img src="assets/skipas_text_1.png" class="skipas_1 f2_t">
+            <img src="assets/skipas_text_2.png" class="skipas_2 f2_t">
+            <img src="assets/small_girl.png" class="small_girl">
+            <img src="assets/snow_logo.png" class="snow_logo">
+            <img src="assets/logo.png" class="logo">
+            <div class="logo_first"></div>
+            <img src="assets/cta.png" class="cta">
+
+    </div>
+
+
+    <script>
+        
+        
+        function myFunction() {
+
+        var t0 = gsap.timeline({ repeat: 2, repeatDelay: 2.5 });
+
+            t0
+                .to('img', { duration: 0, display: 'block' })
+                .add('f0', '+=0.2')
+                .to('.blue_shape', { duration: 0.4, x: 0, ease: 'power2.out' }, 'f0')
+                .to('.f1_t', { duration: 0.4, rotationX: '0deg', opacity: 1, transformOrigin: "center 80%", stagger: .1, ease: 'back' })
+                .to('.f1_t', { duration: 0.4, rotationX: '-90deg', opacity: 0, transformOrigin: "center bottom", stagger: 0.1, ease: 'back' }, '+=1.5')
+                .to('.f2_t', { duration: 0.5, rotationX: '0deg', opacity: 1, stagger: 0.1, ease: 'back' }, '-=0.2')
+              
+                
+                // .to('.big_girl', { duration: 3.5, opacity: 1, scale: 1, rotation: '0deg', x: 0, y: 0, ease: 'power0.none' }, 'f0')
+                .to('.small_girl', { duration: 3.5, scale: 1, display: 'block', rotation: '0deg', x: 0, y: 0, ease: 'power0.none' }, 'f0')
+                .to('.cta', { duration: 0.5, y: 0, opacity: 1, ease: 'back.out' }, '+=0.5')
+                .to('.cta', { duration: 0.3, scale: 1.1, ease: 'power2.out' }, '+=0.5')
+                .to('.cta', { duration: 0.3, scale: 1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1.1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1.1, ease: 'power2.out' }, '+=0.5')
+                .to('.cta', { duration: 0.3, scale: 1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1.1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1.1, ease: 'power2.out' }, '+=0.5')
+                .to('.cta', { duration: 0.3, scale: 1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1.1, ease: 'power2.out' })
+                .to('.cta', { duration: 0.3, scale: 1, ease: 'power2.out' })
+
+                .to('.bg', { duration: 3.5, y: -30, ease: 'power1.out' }, 'f0')
+
+
+                .to('.logo_first', { duration: 0.2, display: 'block', rotationY: '90deg', rotationZ: '0px', ease: 'power0.out' }, 'f0')
+                .to('.logo', { duration: 0.2, rotationY: '0deg', ease: 'power0.out' }, 'f0+=0.2')
+            
+
+            // console.log(t1.totalDuration())
+        }
+
+    </script>
+
+    <script type="text/javascript">
+
+        var clickTag1 = "https://tickets.hema.nl/";
+        var banner = document.getElementById("banner");
+        banner.style.cursor = "pointer";
+        banner.addEventListener("click", goURL1);
+       
+        function goURL1() {
+            window.open(clickTag1);
+        }
+
+    </script>
+
+</body>
+</html>

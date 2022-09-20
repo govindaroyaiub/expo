@@ -1,0 +1,191 @@
+/*<!--*/
+/*# Name: Banner CSS*/
+/*# Banner Creator: Diva World Wide*/
+/*# Website: www.divaww.com*/
+/*-->*/
+
+
+body,
+html{
+    width: 300px;
+    height: 600px;
+}
+
+body{
+    margin: 0;
+}
+
+img{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 300px;
+    height: 600px;
+    display: block;
+}
+
+
+#banner{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    border: 1px solid #d0d0d0ab;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.text1{
+    position: absolute;
+    top: 79px;
+    left: 5px;
+    width: 290px;
+    max-width: 290px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 100px;
+    line-height: 84px;
+    letter-spacing: -12px;
+    transform-origin: center;
+    z-index: 9999;
+}
+
+#recTopLeft{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 79px;
+    width: 150px;
+    height: 258px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    /* transform: translateX(149px);
+    -webkit-transform: translateX(149px);
+    -moz-transform: translateX(149px);
+    -ms-transform: translateX(149px);
+    -o-transform: translateX(149px); */
+    /* border: 1px solid blue; */
+}
+
+#recTopRight{
+    display: none;
+    position: absolute;
+    top: 79px;
+    left: 149px;
+    width: 150px;
+    height: 258px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 999;
+    background-color: white;
+    /* border: 1px solid black; */
+}
+
+#recBottomLeft{
+    display: none;
+    position: absolute;
+    top: 336px;
+    width: 150px;
+    height: 264px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    transform: translate(-149px);
+    -webkit-transform: translate(-149px);
+    -moz-transform: translate(-149px);
+    -ms-transform: translate(-149px);
+    -o-transform: translate(-149px);
+}
+
+#recBottomRight{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    top: 336px;
+    left: 149px;
+    width: 150px;
+    height: 264px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: white;
+    z-index: 99;
+}
+
+#product1{
+    width: 149px;
+    height: 257px;
+    transform-origin: center;
+}
+
+#product2{
+    width: 128px;
+    height: 102px;
+    top: 20px;
+    left: 8px;
+}
+
+#product22{
+    width: 122px;
+    height: 81px;
+    top: 160px;
+    left: 10px;
+}
+
+#product3{
+    width: 151px;
+    height: 264px;
+}
+
+#product4{
+    width: 130px;
+    height: 110px;
+    top: 22px;
+    left: 9px;
+    transform: translateX(149px);
+    -webkit-transform: translateX(149px);
+    -moz-transform: translateX(149px);
+    -ms-transform: translateX(149px);
+    -o-transform: translateX(149px);
+}
+
+#product42{
+    width: 122px;
+    height: 81px;
+    top: 160px;
+    left: 14px;
+    transform: translateX(149px);
+    -webkit-transform: translateX(149px);
+    -moz-transform: translateX(149px);
+    -ms-transform: translateX(149px);
+    -o-transform: translateX(149px);
+}
+
+#cta{
+    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    z-index: 999999;
+}
+
+.text2{
+    position: absolute;
+    top: 418px;
+    left: 3px;
+    width: 290px;
+    max-width: 290px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 63px;
+    line-height: 54.36px;
+    letter-spacing: -8px;
+}
+
+#cursor2{
+    display: none;
+}

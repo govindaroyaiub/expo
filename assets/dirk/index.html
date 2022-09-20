@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dirk Dynamic Weekfolder Voordelers</title>
+    <meta charset="UTF-8">
+    <meta name="ad.size" content="width=300,height=600">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.5.1_min.js"></script>
+</head>
+<body onload="myFunction()">
+
+    <div id="banner">
+        <img src="./assets/bg.jpg" alt="bg" class="bg">
+        <img src="./assets/cartoon.png" alt="cartoon" id="cartoon" class="cartoon">
+        <img src="./assets/logo2.png" alt="logo2.png" id="logo2" class="cartoon">
+       
+        <img src="./assets/logo.png" alt="logo" class="logo">
+        <img src="./assets/cta.png" alt="cta" class="cta">
+        <img src="./assets/product.png" alt="product" class="product">
+
+    </div>
+
+    <script>
+        
+        
+        function myFunction() {
+
+        var t1 = gsap.timeline();        
+            t1
+            .to('img', { duration: 0, display: 'block' }) 
+
+            .to('.cartoon', { duration: .5, y: 0, opacity: 1, ease: 'power2.out' }, '+=0.3')
+            .to('#logo2', { duration: .2, rotate: 5, ease: 'power0.out' }, '+=0.3')
+            .to('#logo2', { duration: .2, rotate: -5, ease: 'power0.out' })
+            .to('#logo2', { duration: .2, rotate: 5, ease: 'power0.out' })
+            .to('#logo2', { duration: .2, rotate: -5, ease: 'power0.out' })
+            .to('#logo2', { duration: .2, rotate: 5, ease: 'power0.out' })
+            .to('#logo2', { duration: .2, rotate: 0, ease: 'power0.out' })
+
+            .to('.cartoon', { duration: .5, scale: 0.76, y: -150, opacity: 1, ease: 'power2.out' }, '+=0.3')
+            .to('.product', { duration: .5, opacity: 1, ease: 'power2.out' }, '+=0.1')
+            .to('.cta', { duration: .5, scale:1, ease: 'power2.out' }, '+=0.3')
+
+            .to('.cta', { duration: .35, yoyo: true, repeat:1, scale:1.05, ease: 'power2.out' }, '+=0.3')
+            .to('.cta', { duration: .35, yoyo: true, repeat:1, scale:1.05, ease: 'power2.out' }, '+=0.7')
+            .to('.cta', { duration: .35, yoyo: true, repeat:1, scale:1.05, ease: 'power2.out' }, '+=0.9')
+          
+
+        }
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        var clickTag = "https://www.perrysport.nl/";
+        var banner = document.getElementById("banner");
+        banner.style.cursor = "pointer";
+        banner.addEventListener("click", goURL);
+
+        function goURL() {
+            window.open(clickTag);
+        }
+
+    </script>
+
+</body>
+</html>

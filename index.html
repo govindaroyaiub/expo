@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetnine Showcase</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/gsap.js"></script>
+</head>
+<body onload="myFunction()">
+    <div class="planetnineLogo">
+        <img src="assets/planetnine_logo.gif" alt="planetnine_logo" id="planetnineLogo">
+        <span id="showcase">SHOWCASE</span>
+    </div>
+
+    <div class="bannerSection">
+        <div class="bannersubSection">
+            <div class="bannerMain">
+                <iframe width="300"
+                    height="600" frameBorder="0" scrolling="no" id="love" class="banners"></iframe>
+                <iframe width="300"
+                    height="600" frameBorder="0" scrolling="no" id="perry" class="banners"></iframe>
+                <iframe width="300"
+                    height="600" frameBorder="0" scrolling="no" id="love2" class="banners"></iframe>
+                <iframe width="300"
+                    height="600" frameBorder="0" scrolling="no" id="hema" class="banners"></iframe>
+                <iframe width="300"
+                    height="600" frameBorder="0" scrolling="no" id="love3" class="banners"></iframe>
+                <iframe width="300"
+                    height="600" frameBorder="0" scrolling="no" id="dirk" class="banners"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+    <script>
+        let love = document.getElementById("love");
+        let love2 = document.getElementById("love2");
+        let love3 = document.getElementById("love3");
+        let perry = document.getElementById("perry");
+        let hema = document.getElementById("hema");
+        let dirk = document.getElementById("dirk");
+        
+        let tl = gsap.timeline();
+
+        function love_show(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#love', {duration: .5, opacity: 1, display: 'block', ease: 'power0.none'});
+            setTimeout(() => {
+                document.getElementById('love').src = "assets/love_stories/index.html";
+            }, 500);
+            
+        }
+
+        function love_hide(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#love', {duration: 0.5, opacity: 0, ease: 'power0.none'})
+        }
+
+        function perry_show(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#perry', {duration: 0.5, opacity: 1, x: 0, y: 0, display: 'block', ease: 'power0.none'})
+            setTimeout(() => {
+                document.getElementById('perry').src = "assets/surbv/index.html";
+            }, 100);
+        }
+
+        function perry_hide(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#perry', {duration: 0.5, opacity: 0, x: 120, y: 0, ease: 'power0.none'})
+        }
+
+        function love2_show(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#love2', {duration: 0.5, opacity: 1, x: 0, y: 0, display: 'block', ease: 'power0.none'})
+            setTimeout(() => {
+                document.getElementById('love2').src = "assets/love_stories/index.html";
+            }, 500);
+        }
+
+        function love2_hide(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#love2', {duration: 0.5, opacity: 0, x: 0, y: 0, ease: 'power0.none'})
+        }
+
+        function hema_show(){
+            console.log('hema');
+            let t1 = gsap.timeline();
+            t1
+            .to('#hema', {duration: 0.5, opacity: 1, y: 0, x: 0, display: 'block', ease: 'power0.none'})
+            setTimeout(() => {
+                document.getElementById('hema').src = "assets/hema/index.html";
+            }, 100);
+        }
+
+        function hema_hide(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#hema', {duration: 0.5, opacity: 0, y: 120, x: 0, ease: 'power0.none'})
+        }
+
+        function love3_show(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#love3', {duration: 0.5, opacity: 1, x: 0, y: 0, display: 'block', ease: 'power0.none'})
+            setTimeout(() => {
+                document.getElementById('love3').src = "assets/love_stories/index.html";
+            }, 500);
+        }
+
+        function love3_hide(){
+            let t1 = gsap.timeline();
+            t1
+            .to('#love3', {duration: 0.5, opacity: 0, x: 0, y: 0, ease: 'power0.none'})
+        }
+
+        function dirk_show(){
+            console.log('hema');
+            let t1 = gsap.timeline();
+            t1
+            .to('#dirk', {duration: 0.5, opacity: 1, y: 0, x: 0, display: 'block', ease: 'power0.none'})
+            setTimeout(() => {
+                document.getElementById('dirk').src = "assets/dirk/index.html";
+            }, 100);
+        }
+
+        function myFunction(){
+            setTimeout(() => {
+                love_show();
+            }, 500);
+            setTimeout(() => {
+                love_hide();
+            }, 15000);
+            setTimeout(() => {
+                perry_show();
+            }, 15600);
+            setTimeout(() => {
+                perry_hide();
+            }, 24500);
+            setTimeout(() => {
+                love2_show();
+            }, 25000);
+            setTimeout(() => {
+                love2_hide();
+            }, 40000);
+            setTimeout(() => {
+                hema_show();
+            }, 40500);
+            setTimeout(() => {
+                hema_hide();
+            }, 48000);
+            setTimeout(() => {
+                love3_show();
+            }, 48500);
+            setTimeout(() => {
+                love3_hide();
+            }, 63000);
+            setTimeout(() => {
+                dirk_show();
+            }, 63500);
+        }
+
+        setTimeout(function(){
+            window.location.reload();
+        }, 74000);
+    </script>
+</html>

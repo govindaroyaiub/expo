@@ -1,0 +1,46 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#banner{
+  position: relative;	
+  width:300px;
+  height:600px;
+  overflow: hidden;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #dedede;
+}
+
+img{
+  position: absolute;
+  left:0;
+  top:0;
+  width:300px;
+  height:600px;
+  display: none;
+}
+
+.product {
+  opacity: 0;
+}
+
+.cartoon{
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.cta {
+  transform: scale(0);
+  transform-origin: 151px 557px;
+}
+
+#logo2 {
+  transform-origin: 151px 261px;
+}
